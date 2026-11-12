@@ -1,9 +1,7 @@
-
 {
   "name": "verdeva",
   "version": "1.0.0",
   "private": true,
-  "description": "A sustainable lifestyle e-commerce website.",
   "scripts": {
     "build": "tsc",
     "watch": "tsc --watch"
@@ -12,4 +10,3 @@
     "typescript": "^5.8.3"
   }
 }
-
