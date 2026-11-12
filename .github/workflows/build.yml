@@ -5,7 +5,6 @@ on:
   push:
     branches:
       - main
-  workflow_dispatch:
 
 permissions:
   contents: read
@@ -27,34 +26,19 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 22
+          node-version: 24
+          cache: npm
 
       - name: Install dependencies
-        run: npm install
+        run: npm ci
 
       - name: Compile TypeScript
         run: npm run build
 
-      - name: Prepare website
-        run: |
-          mkdir -p _site
-          rsync -av \
-            --exclude='.git' \
-            --exclude='.github' \
-            --exclude='node_modules' \
-            --exclude='_site' \
-            --exclude='ts' \
-            --exclude='package*.json' \
-            --exclude='tsconfig.json' \
-            ./ _site/
-
-      - name: Configure GitHub Pages
-        uses: actions/configure-pages@v5
-
       - name: Upload website
-        uses: actions/upload-pages-artifact@v4
+        uses: actions/upload-pages-artifact@v3
         with:
-          path: ./_site
+          path: .
 
   deploy:
     environment:
@@ -65,6 +49,6 @@ jobs:
     needs: build
 
     steps:
-      - name: Deploy website
+      - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
