@@ -1,0 +1,255 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore thoughtfully selected sustainable essentials for a more conscious everyday.">
+    <meta name="theme-color" content="#F7F6F0">
+
+    <title>Shop — Verdeva</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/shop.css">
+
+    <script src="../js/index.js" defer></script>
+</head>
+
+<body>
+
+    <div class="announcement-bar">
+        Complimentary shipping on orders over €60
+    </div>
+
+    <header class="site-header">
+        <div class="header-container">
+
+            <button class="menu-toggle" id="menuToggle"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="mainNavigation">
+                <span></span>
+                <span></span>
+            </button>
+
+            <a href="../index.html" class="brand-logo">verdeva.</a>
+
+            <nav class="main-navigation" id="mainNavigation">
+                <a href="../index.html">Home</a>
+                <a href="shop.html" aria-current="page">Shop</a>
+                <a href="impact.html">Our Impact</a>
+                <a href="journal.html">Journal</a>
+            </nav>
+
+            <div class="header-actions">
+                <button id="searchToggle" class="search-toggle"
+                    aria-label="Open search"
+                    aria-expanded="false">
+                    Search
+                </button>
+
+                <a href="bag.html" class="bag-link">
+                    Bag (<span id="bagCount">0</span>)
+                </a>
+            </div>
+        </div>
+
+        <div class="search-panel" id="searchPanel" hidden>
+            <form id="searchForm">
+                <label for="siteSearch">What are you looking for?</label>
+                <input type="search" id="siteSearch"
+                    placeholder="Search products..."
+                    autocomplete="off">
+                <button type="submit">Search</button>
+            </form>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="page-hero shop-hero">
+            <div class="page-hero-content">
+                <span class="eyebrow">THE VERDEVA COLLECTION</span>
+                <h1>Everyday essentials.<br><em>Thoughtfully chosen.</em></h1>
+                <p>
+                    Discover considered pieces that bring simplicity,
+                    purpose and sustainability into your everyday life.
+                </p>
+            </div>
+        </section>
+
+        <section class="shop-section section-padding">
+
+            <div class="section-heading">
+                <span class="eyebrow">SHOP CONSCIOUSLY</span>
+                <h2>Find your everyday essentials</h2>
+                <p>Useful objects, better materials and thoughtful design.</p>
+            </div>
+
+            <div class="shop-categories">
+                <a href="#kitchen">Kitchen</a>
+                <a href="#bath-body">Bath & Body</a>
+                <a href="#home">Home</a>
+                <a href="#on-the-go">On the go</a>
+            </div>
+
+            <div class="shop-toolbar">
+                <p>Our collection</p>
+                <span>Thoughtfully selected essentials</span>
+            </div>
+
+            <div class="product-grid">
+
+                <article class="product-card"
+                    id="on-the-go"
+                    data-product-id="everyday-bottle">
+
+                    <a href="product.html?id=everyday-bottle" class="product-image">
+                        <img
+                            src="https://images.unsplash.com/photo-1602143407151-7111542de6e8?auto=format&fit=crop&w=900&q=85"
+                            alt="Reusable insulated water bottle"
+                            loading="lazy">
+                    </a>
+
+                    <div class="product-info">
+                        <span class="product-category">ON THE GO</span>
+                        <h3>Everyday Insulated Bottle</h3>
+                        <p class="product-card__price" data-product-price>€38.00</p>
+
+                        <button class="button button--secondary"
+                            type="button"
+                            data-add-to-cart>
+                            Add to bag
+                        </button>
+                    </div>
+                </article>
+
+                <article class="product-card"
+                    id="bath-body"
+                    data-product-id="bamboo-toothbrush">
+
+                    <a href="product.html?id=bamboo-toothbrush" class="product-image">
+                        <img
+                            src="https://images.unsplash.com/photo-1609840114035-3c981b782dfe?auto=format&fit=crop&w=900&q=85"
+                            alt="Natural bamboo toothbrush"
+                            loading="lazy">
+                    </a>
+
+                    <div class="product-info">
+                        <span class="product-category">BATH & BODY</span>
+                        <h3>Bamboo Toothbrush Set</h3>
+                        <p class="product-card__price" data-product-price>€14.00</p>
+
+                        <button class="button button--secondary"
+                            type="button"
+                            data-add-to-cart>
+                            Add to bag
+                        </button>
+                    </div>
+                </article>
+
+                <article class="product-card"
+                    id="home"
+                    data-product-id="organic-tote">
+
+                    <a href="product.html?id=organic-tote" class="product-image">
+                        <img
+                            src="https://images.unsplash.com/photo-1590874103328-eac38a683ce7?auto=format&fit=crop&w=900&q=85"
+                            alt="Minimal natural fabric tote bag"
+                            loading="lazy">
+                    </a>
+
+                    <div class="product-info">
+                        <span class="product-category">EVERYDAY</span>
+                        <h3>Organic Market Tote</h3>
+                        <p class="product-card__price" data-product-price>€24.00</p>
+
+                        <button class="button button--secondary"
+                            type="button"
+                            data-add-to-cart>
+                            Add to bag
+                        </button>
+                    </div>
+                </article>
+
+                <article class="product-card"
+                    id="kitchen"
+                    data-product-id="botanical-soap">
+
+                    <a href="product.html?id=botanical-soap" class="product-image">
+                        <img
+                            src="https://images.unsplash.com/photo-1600428853876-fb5a850b444f?auto=format&fit=crop&w=900&q=85"
+                            alt="Natural botanical soap bars"
+                            loading="lazy">
+                    </a>
+
+                    <div class="product-info">
+                        <span class="product-category">BATH & BODY</span>
+                        <h3>Botanical Soap Trio</h3>
+                        <p class="product-card__price" data-product-price>€22.00</p>
+
+                        <button class="button button--secondary"
+                            type="button"
+                            data-add-to-cart>
+                            Add to bag
+                        </button>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <section class="shop-values section-padding">
+            <div class="section-heading">
+                <span class="eyebrow">THE VERDEVA STANDARD</span>
+                <h2>Better choices, made simple.</h2>
+                <p>
+                    We believe everyday objects should be useful,
+                    considered and made with a little more care.
+                </p>
+                <a href="impact.html" class="text-link">Discover our approach</a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <a href="../index.html" class="brand-logo">verdeva.</a>
+                <p>Live consciously. Choose better.</p>
+            </div>
+
+            <div class="footer-links">
+                <div>
+                    <h3>Explore</h3>
+                    <a href="../index.html">Home</a>
+                    <a href="shop.html">Shop</a>
+                    <a href="impact.html">Our Impact</a>
+                    <a href="journal.html">Journal</a>
+                </div>
+
+                <div>
+                    <h3>Information</h3>
+                    <a href="bag.html">Shopping bag</a>
+                    <a href="impact.html">Our values</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Verdeva. Thoughtfully made for everyday living.</p>
+        </div>
+    </footer>
+
+    <div class="cart-notification" id="cartNotification" hidden>
+        <p id="cartNotificationMessage"></p>
+        <a href="bag.html">View bag</a>
+    </div>
+
+</body>
+</html>
