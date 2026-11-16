@@ -4,105 +4,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover Verdeva: thoughtfully selected sustainable lifestyle essentials for a slower, simpler and more conscious everyday.">
+    <meta name="theme-color" content="#F7F6F0">
 
     <title>Verdeva — Live Consciously. Choose Better.</title>
 
-    <meta name="description" content="Discover thoughtfully selected sustainable essentials for your home, everyday rituals and a more conscious lifestyle.">
-
-    <meta name="theme-color" content="#F7F6F0">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/index.css">
 
-    <script src="js/index.js" type="module"></script>
+    <script src="js/index.js" defer></script>
 </head>
 
 <body>
 
     <!-- ANNOUNCEMENT BAR -->
+
     <div class="announcement-bar">
-        <p>Complimentary shipping on orders over €60</p>
+        Complimentary shipping on orders over €60
     </div>
 
 
     <!-- HEADER -->
-    <header class="site-header" id="siteHeader">
+
+    <header class="site-header">
 
         <div class="header-container">
 
-            <button class="mobile-menu-toggle"
-                    id="menuToggle"
-                    type="button"
-                    aria-label="Open navigation menu"
-                    aria-expanded="false"
-                    aria-controls="mainNavigation">
+            <button
+                class="menu-toggle"
+                id="menuToggle"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="mainNavigation">
+
                 <span></span>
                 <span></span>
+
             </button>
 
-            <a href="index.html" class="brand-logo" aria-label="Verdeva homepage">
-                verdeva<span>.</span>
+            <a href="index.html" class="brand-logo">
+                verdeva.
             </a>
 
-            <nav class="main-navigation" id="mainNavigation" aria-label="Main navigation">
+            <nav class="main-navigation" id="mainNavigation">
 
-                <a href="index.html" class="nav-link active">Home</a>
-
-                <a href="pages/shop.html" class="nav-link">Shop</a>
-
-                <a href="pages/impact.html" class="nav-link">Our Impact</a>
-
-                <a href="pages/journal.html" class="nav-link">Journal</a>
+                <a href="index.html" aria-current="page">Home</a>
+                <a href="pages/shop.html">Shop</a>
+                <a href="pages/impact.html">Our Impact</a>
+                <a href="pages/journal.html">Journal</a>
 
             </nav>
 
             <div class="header-actions">
 
-                <button class="header-icon search-toggle"
-                        id="searchToggle"
-                        type="button"
-                        aria-label="Search products">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
-                        <circle cx="10.8" cy="10.8" r="6.8"></circle>
-                        <path d="m16 16 5 5"></path>
-                    </svg>
+                <button
+                    id="searchToggle"
+                    class="search-toggle"
+                    aria-label="Open search"
+                    aria-expanded="false">
+
+                    Search
+
                 </button>
 
-                <a href="pages/bag.html" class="bag-link" aria-label="Shopping bag">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
-                        <path d="M5 8h14l1 13H4L5 8Z"></path>
-                        <path d="M9 9V6a3 3 0 0 1 6 0v3"></path>
-                    </svg>
-
-                    <span class="bag-label">Bag</span>
-
-                    <span class="bag-count" id="bagCount">0</span>
+                <a href="pages/bag.html" class="bag-link">
+                    Bag (<span id="bagCount">0</span>)
                 </a>
 
             </div>
 
         </div>
 
-        <!-- SEARCH PANEL -->
         <div class="search-panel" id="searchPanel" hidden>
-            <form class="search-form" id="searchForm" action="pages/shop.html" method="GET">
-                <label for="siteSearch">Search products</label>
 
-                <div class="search-input-wrapper">
-                    <input
-                        type="search"
-                        id="siteSearch"
-                        name="q"
-                        placeholder="What are you looking for?"
-                    >
+            <form id="searchForm">
 
-                    <button type="submit">Search</button>
-                </div>
+                <label for="siteSearch">
+                    What are you looking for?
+                </label>
+
+                <input
+                    type="search"
+                    id="siteSearch"
+                    placeholder="Search products..."
+                    autocomplete="off">
+
+                <button type="submit">
+                    Search
+                </button>
+
             </form>
+
         </div>
 
     </header>
@@ -110,22 +105,22 @@
 
     <main>
 
+
         <!-- HERO SECTION -->
-        <section class="hero-section">
+
+        <section class="hero">
 
             <div class="hero-image">
+
                 <img
                     src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=2000&q=85"
-                    alt="Natural fabrics and thoughtfully selected lifestyle essentials"
-                    fetchpriority="high"
-                >
-            </div>
+                    alt="Natural fabrics and thoughtfully selected lifestyle essentials">
 
-            <div class="hero-overlay"></div>
+            </div>
 
             <div class="hero-content">
 
-                <span class="eyebrow hero-eyebrow">
+                <span class="eyebrow">
                     A MORE CONSCIOUS WAY OF LIVING
                 </span>
 
@@ -141,12 +136,11 @@
 
                 <div class="hero-actions">
 
-                    <a href="pages/shop.html" class="button button-primary">
+                    <a href="pages/shop.html" class="button button--primary">
                         Explore the collection
-                        <span aria-hidden="true">→</span>
                     </a>
 
-                    <a href="pages/impact.html" class="button button-text">
+                    <a href="pages/impact.html" class="button button--secondary">
                         Discover our approach
                     </a>
 
@@ -154,34 +148,35 @@
 
             </div>
 
-            <div class="hero-bottom-note">
-                <span>01 / CONSCIOUS LIVING</span>
-                <span>DESIGNED WITH PURPOSE</span>
-            </div>
-
         </section>
 
 
         <!-- BRAND INTRODUCTION -->
+
         <section class="intro-section section-padding">
 
             <div class="intro-content">
 
-                <span class="eyebrow">THE VERDEVA PHILOSOPHY</span>
+                <span class="eyebrow">
+                    THE VERDEVA PHILOSOPHY
+                </span>
 
                 <h2>
-                    A little more intention.<br>
-                    A lot more <em>meaning.</em>
+                    A more thoughtful way to live.
                 </h2>
 
                 <p>
-                    We believe the everyday is where meaningful change begins.
-                    From the objects we use to the materials we choose,
-                    every decision is an opportunity to live a little better.
+                    We believe everyday living can be simpler,
+                    more intentional and more connected to what matters.
+                </p>
+
+                <p>
+                    Verdeva brings together thoughtfully selected
+                    essentials that make conscious choices feel natural.
                 </p>
 
                 <a href="pages/impact.html" class="text-link">
-                    Get to know us <span>→</span>
+                    Discover our philosophy
                 </a>
 
             </div>
@@ -190,95 +185,84 @@
 
 
         <!-- SHOP BY CATEGORY -->
+
         <section class="categories-section section-padding">
 
             <div class="section-heading">
 
-                <div>
-                    <span class="eyebrow">THOUGHTFUL BY NATURE</span>
-                    <h2>Shop by <em>ritual.</em></h2>
-                </div>
+                <span class="eyebrow">
+                    EXPLORE VERDEVA
+                </span>
 
-                <a href="pages/shop.html" class="text-link">
-                    Explore all products <span>→</span>
-                </a>
+                <h2>
+                    Thoughtful living starts here.
+                </h2>
+
+                <p>
+                    Discover considered essentials for every part
+                    of your everyday routine.
+                </p>
 
             </div>
 
-
             <div class="category-grid">
 
-                <a href="pages/shop.html?category=kitchen" class="category-card">
+                <a href="pages/shop.html#kitchen" class="category-card">
 
-                    <div class="category-image">
-                        <img
-                            src="https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=900&q=85"
-                            alt="Natural and minimal kitchen essentials"
-                            loading="lazy"
-                        >
-                    </div>
+                    <img
+                        src="https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=1000&q=85"
+                        alt="Natural kitchen essentials"
+                        loading="lazy">
 
-                    <div class="category-info">
+                    <div class="category-content">
                         <span>01</span>
                         <h3>Kitchen</h3>
-                        <span class="category-arrow">↗</span>
+                        <span class="category-link">Explore category</span>
                     </div>
 
                 </a>
 
+                <a href="pages/shop.html#bath-body" class="category-card">
 
-                <a href="pages/shop.html?category=bath-body" class="category-card">
+                    <img
+                        src="https://images.unsplash.com/photo-1600428853876-fb5a850b444f?auto=format&fit=crop&w=1000&q=85"
+                        alt="Natural bath and body products"
+                        loading="lazy">
 
-                    <div class="category-image">
-                        <img
-                            src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=900&q=85"
-                            alt="Natural skincare and bathroom essentials"
-                            loading="lazy"
-                        >
-                    </div>
-
-                    <div class="category-info">
+                    <div class="category-content">
                         <span>02</span>
                         <h3>Bath & Body</h3>
-                        <span class="category-arrow">↗</span>
+                        <span class="category-link">Explore category</span>
                     </div>
 
                 </a>
 
+                <a href="pages/shop.html#home" class="category-card">
 
-                <a href="pages/shop.html?category=home" class="category-card">
+                    <img
+                        src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1000&q=85"
+                        alt="Minimal and natural home interior"
+                        loading="lazy">
 
-                    <div class="category-image">
-                        <img
-                            src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=900&q=85"
-                            alt="Warm minimalist sustainable home interior"
-                            loading="lazy"
-                        >
-                    </div>
-
-                    <div class="category-info">
+                    <div class="category-content">
                         <span>03</span>
                         <h3>Home</h3>
-                        <span class="category-arrow">↗</span>
+                        <span class="category-link">Explore category</span>
                     </div>
 
                 </a>
 
+                <a href="pages/shop.html#on-the-go" class="category-card">
 
-                <a href="pages/shop.html?category=on-the-go" class="category-card">
+                    <img
+                        src="https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=1000&q=85"
+                        alt="Everyday lifestyle essentials"
+                        loading="lazy">
 
-                    <div class="category-image">
-                        <img
-                            src="https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=900&q=85"
-                            alt="Reusable everyday accessories"
-                            loading="lazy"
-                        >
-                    </div>
-
-                    <div class="category-info">
+                    <div class="category-content">
                         <span>04</span>
-                        <h3>On the Go</h3>
-                        <span class="category-arrow">↗</span>
+                        <h3>On the go</h3>
+                        <span class="category-link">Explore category</span>
                     </div>
 
                 </a>
@@ -289,197 +273,182 @@
 
 
         <!-- BESTSELLERS -->
+
         <section class="bestsellers-section section-padding">
 
             <div class="section-heading">
 
-                <div>
-                    <span class="eyebrow">THE EVERYDAY EDIT</span>
-                    <h2>Considered <em>essentials.</em></h2>
-                    <p>Good things, chosen with purpose.</p>
-                </div>
+                <span class="eyebrow">
+                    THE EVERYDAY EDIT
+                </span>
 
-                <a href="pages/shop.html?sort=bestselling" class="text-link">
-                    Shop all bestsellers <span>→</span>
+                <h2>
+                    Thoughtful favourites.
+                </h2>
+
+                <p>
+                    Everyday essentials selected with care and purpose.
+                </p>
+
+                <a href="pages/shop.html" class="text-link">
+                    View the collection
                 </a>
 
             </div>
 
-
             <div class="product-grid">
 
-                <!-- PRODUCT 1 -->
-                <article class="product-card" data-product-id="everyday-bottle">
 
-                    <a href="pages/products/everyday-insulated-bottle.html" class="product-image">
+                <article class="product-card"
+                    data-product-id="everyday-bottle">
 
-                        <span class="product-badge">BESTSELLER</span>
+                    <a href="pages/product.html?id=everyday-bottle"
+                        class="product-image">
 
                         <img
-                            src="https://images.unsplash.com/photo-1602143407151-7111542de6e8?auto=format&fit=crop&w=800&q=85"
+                            src="https://images.unsplash.com/photo-1602143407151-7111542de6e8?auto=format&fit=crop&w=900&q=85"
                             alt="Reusable insulated water bottle"
-                            loading="lazy"
-                        >
+                            loading="lazy">
 
                     </a>
 
                     <div class="product-info">
 
-                        <div class="product-details">
-                            <h3>
-                                <a href="pages/products/everyday-insulated-bottle.html">
-                                    Everyday Insulated Bottle
-                                </a>
-                            </h3>
+                        <span class="product-category">
+                            ON THE GO
+                        </span>
 
-                            <p>Designed for everyday hydration.</p>
-                        </div>
+                        <h3>Everyday Insulated Bottle</h3>
 
-                        <div class="product-purchase">
-                            <span class="product-price">€38.00</span>
+                        <p class="product-card__price" data-product-price>
+                            €38.00
+                        </p>
 
-                            <button
-                                type="button"
-                                class="add-to-bag-button"
-                                data-add-to-cart="everyday-bottle"
-                                aria-label="Add Everyday Insulated Bottle to bag"
-                            >
-                                +
-                            </button>
-                        </div>
+                        <button
+                            type="button"
+                            class="button button--secondary"
+                            data-add-to-cart>
+
+                            Add to bag
+
+                        </button>
 
                     </div>
 
                 </article>
 
 
-                <!-- PRODUCT 2 -->
-                <article class="product-card" data-product-id="bamboo-toothbrush">
+                <article class="product-card"
+                    data-product-id="bamboo-toothbrush">
 
-                    <a href="pages/products/bamboo-toothbrush-set.html" class="product-image">
-
-                        <span class="product-badge">CONSCIOUS CHOICE</span>
+                    <a href="pages/product.html?id=bamboo-toothbrush"
+                        class="product-image">
 
                         <img
-                            src="https://images.unsplash.com/photo-1609840114035-3c981b782dfe?auto=format&fit=crop&w=800&q=85"
-                            alt="Minimal bamboo toothbrush set"
-                            loading="lazy"
-                        >
+                            src="https://images.unsplash.com/photo-1609840114035-3c981b782dfe?auto=format&fit=crop&w=900&q=85"
+                            alt="Natural bamboo toothbrush"
+                            loading="lazy">
 
                     </a>
 
                     <div class="product-info">
 
-                        <div class="product-details">
-                            <h3>
-                                <a href="pages/products/bamboo-toothbrush-set.html">
-                                    Bamboo Toothbrush Set
-                                </a>
-                            </h3>
+                        <span class="product-category">
+                            BATH & BODY
+                        </span>
 
-                            <p>A simpler daily essential.</p>
-                        </div>
+                        <h3>Bamboo Toothbrush Set</h3>
 
-                        <div class="product-purchase">
-                            <span class="product-price">€14.00</span>
+                        <p class="product-card__price" data-product-price>
+                            €14.00
+                        </p>
 
-                            <button
-                                type="button"
-                                class="add-to-bag-button"
-                                data-add-to-cart="bamboo-toothbrush"
-                                aria-label="Add Bamboo Toothbrush Set to bag"
-                            >
-                                +
-                            </button>
-                        </div>
+                        <button
+                            type="button"
+                            class="button button--secondary"
+                            data-add-to-cart>
+
+                            Add to bag
+
+                        </button>
 
                     </div>
 
                 </article>
 
 
-                <!-- PRODUCT 3 -->
-                <article class="product-card" data-product-id="organic-tote">
+                <article class="product-card"
+                    data-product-id="organic-tote">
 
-                    <a href="pages/products/organic-market-tote.html" class="product-image">
+                    <a href="pages/product.html?id=organic-tote"
+                        class="product-image">
 
                         <img
-                            src="https://images.unsplash.com/photo-1590874103328-eac38a683ce7?auto=format&fit=crop&w=800&q=85"
-                            alt="Natural fabric everyday tote bag"
-                            loading="lazy"
-                        >
+                            src="https://images.unsplash.com/photo-1590874103328-eac38a683ce7?auto=format&fit=crop&w=900&q=85"
+                            alt="Organic fabric market tote"
+                            loading="lazy">
 
                     </a>
 
                     <div class="product-info">
 
-                        <div class="product-details">
-                            <h3>
-                                <a href="pages/products/organic-market-tote.html">
-                                    Organic Market Tote
-                                </a>
-                            </h3>
+                        <span class="product-category">
+                            EVERYDAY
+                        </span>
 
-                            <p>Made for everyday adventures.</p>
-                        </div>
+                        <h3>Organic Market Tote</h3>
 
-                        <div class="product-purchase">
-                            <span class="product-price">€24.00</span>
+                        <p class="product-card__price" data-product-price>
+                            €24.00
+                        </p>
 
-                            <button
-                                type="button"
-                                class="add-to-bag-button"
-                                data-add-to-cart="organic-tote"
-                                aria-label="Add Organic Market Tote to bag"
-                            >
-                                +
-                            </button>
-                        </div>
+                        <button
+                            type="button"
+                            class="button button--secondary"
+                            data-add-to-cart>
+
+                            Add to bag
+
+                        </button>
 
                     </div>
 
                 </article>
 
 
-                <!-- PRODUCT 4 -->
-                <article class="product-card" data-product-id="botanical-soap">
+                <article class="product-card"
+                    data-product-id="botanical-soap">
 
-                    <a href="pages/products/botanical-soap-trio.html" class="product-image">
-
-                        <span class="product-badge">NEW ARRIVAL</span>
+                    <a href="pages/product.html?id=botanical-soap"
+                        class="product-image">
 
                         <img
-                            src="https://images.unsplash.com/photo-1600428853876-fb5a850b444f?auto=format&fit=crop&w=800&q=85"
-                            alt="Natural botanical soap products"
-                            loading="lazy"
-                        >
+                            src="https://images.unsplash.com/photo-1600428853876-fb5a850b444f?auto=format&fit=crop&w=900&q=85"
+                            alt="Natural botanical soap trio"
+                            loading="lazy">
 
                     </a>
 
                     <div class="product-info">
 
-                        <div class="product-details">
-                            <h3>
-                                <a href="pages/products/botanical-soap-trio.html">
-                                    Botanical Soap Trio
-                                </a>
-                            </h3>
+                        <span class="product-category">
+                            BATH & BODY
+                        </span>
 
-                            <p>A gentle everyday ritual.</p>
-                        </div>
+                        <h3>Botanical Soap Trio</h3>
 
-                        <div class="product-purchase">
-                            <span class="product-price">€22.00</span>
+                        <p class="product-card__price" data-product-price>
+                            €22.00
+                        </p>
 
-                            <button
-                                type="button"
-                                class="add-to-bag-button"
-                                data-add-to-cart="botanical-soap"
-                                aria-label="Add Botanical Soap Trio to bag"
-                            >
-                                +
-                            </button>
-                        </div>
+                        <button
+                            type="button"
+                            class="button button--secondary"
+                            data-add-to-cart>
+
+                            Add to bag
+
+                        </button>
 
                     </div>
 
@@ -491,37 +460,42 @@
 
 
         <!-- BRAND STORY -->
-        <section class="story-section">
 
-            <div class="story-image">
+        <section class="brand-story-section">
+
+            <div class="brand-story-image">
 
                 <img
-                    src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1200&q=85"
-                    alt="Thoughtfully designed natural living space"
-                    loading="lazy"
-                >
+                    src="https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?auto=format&fit=crop&w=1600&q=85"
+                    alt="Natural textures and thoughtfully selected home objects"
+                    loading="lazy">
 
             </div>
 
-            <div class="story-content">
+            <div class="brand-story-content">
 
-                <span class="eyebrow">A DIFFERENT WAY OF THINKING</span>
+                <span class="eyebrow">
+                    THE VERDEVA APPROACH
+                </span>
 
                 <h2>
-                    Less, but<br>
-                    <em>better.</em>
+                    Less unnecessary.<br>
+                    More meaningful.
                 </h2>
 
                 <p>
-                    We don't believe in buying more. We believe in choosing
-                    better. Verdeva brings together carefully selected
-                    essentials that celebrate thoughtful design,
-                    considered materials and a more intentional way of living.
+                    We believe a better everyday begins with
+                    the choices we make at home, in our routines
+                    and in the objects we use.
                 </p>
 
-                <a href="pages/impact.html" class="button button-dark">
-                    Discover our philosophy
-                    <span>→</span>
+                <p>
+                    Our approach is simple: choose thoughtfully,
+                    appreciate what you have and make room for what matters.
+                </p>
+
+                <a href="pages/impact.html" class="button button--primary">
+                    Discover our approach
                 </a>
 
             </div>
@@ -529,100 +503,83 @@
         </section>
 
 
-        <!-- OUR VALUES -->
+        <!-- BRAND VALUES -->
+
         <section class="values-section section-padding">
 
-            <div class="section-heading centered-heading">
+            <div class="section-heading">
 
-                <span class="eyebrow">WHAT WE BELIEVE IN</span>
+                <span class="eyebrow">
+                    WHAT WE BELIEVE IN
+                </span>
 
-                <h2>Good by <em>nature.</em></h2>
-
-                <p>
-                    A more considered approach to the things we bring into our lives.
-                </p>
+                <h2>
+                    Better choices, every day.
+                </h2>
 
             </div>
-
 
             <div class="values-grid">
 
                 <article class="value-card">
 
-                    <div class="value-icon">
-                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.3">
-                            <path d="M24 39V19"></path>
-                            <path d="M24 27C12 27 8 20 8 10c11 0 16 6 16 17Z"></path>
-                            <path d="M24 21C24 11 31 7 41 7c0 11-6 17-17 17"></path>
-                        </svg>
-                    </div>
+                    <span class="value-number">01</span>
 
                     <h3>Thoughtfully sourced</h3>
 
                     <p>
-                        We prioritize considered materials and responsible
-                        sourcing when selecting our products.
+                        Considered materials and products selected
+                        with purpose.
                     </p>
 
                 </article>
 
-
                 <article class="value-card">
 
-                    <div class="value-icon">
-                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.3">
-                            <path d="M24 6 40 15v18L24 42 8 33V15L24 6Z"></path>
-                            <path d="m8 15 16 9 16-9"></path>
-                            <path d="M24 24v18"></path>
-                        </svg>
-                    </div>
+                    <span class="value-number">02</span>
 
                     <h3>Made to last</h3>
 
                     <p>
-                        We value durable everyday essentials designed to be
-                        used and appreciated over time.
+                        Practical design and everyday usefulness
+                        over unnecessary quantity.
                     </p>
 
                 </article>
 
-
                 <article class="value-card">
 
-                    <div class="value-icon">
-                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.3">
-                            <path d="M24 40s-17-9-17-21a9 9 0 0 1 17-4 9 9 0 0 1 17 4c0 12-17 21-17 21Z"></path>
-                            <path d="m17 23 5 5 10-11"></path>
-                        </svg>
-                    </div>
+                    <span class="value-number">03</span>
 
                     <h3>Less unnecessary waste</h3>
 
                     <p>
-                        We encourage reusable alternatives and more
-                        thoughtful consumption habits.
+                        Reusable alternatives and more conscious
+                        everyday habits.
                     </p>
 
                 </article>
 
-
                 <article class="value-card">
 
-                    <div class="value-icon">
-                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.3">
-                            <circle cx="24" cy="24" r="17"></circle>
-                            <path d="M7 24h34M24 7c5 5 7 11 7 17s-2 12-7 17c-5-5-7-11-7-17s2-12 7-17Z"></path>
-                        </svg>
-                    </div>
+                    <span class="value-number">04</span>
 
                     <h3>Conscious living</h3>
 
                     <p>
-                        Small, intentional choices can help create
-                        more meaningful everyday routines.
+                        Small and realistic choices that can
+                        become lasting habits.
                     </p>
 
                 </article>
+
+            </div>
+
+            <div class="values-action">
+
+                <a href="pages/impact.html" class="text-link">
+                    Learn more about our values
+                </a>
 
             </div>
 
@@ -630,37 +587,35 @@
 
 
         <!-- IMPACT PREVIEW -->
-        <section class="impact-preview-section">
+
+        <section class="impact-preview">
 
             <div class="impact-preview-image">
 
                 <img
-                    src="https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=1800&q=85"
-                    alt="Sunlight over a natural green landscape"
-                    loading="lazy"
-                >
+                    src="https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=1600&q=85"
+                    alt="Peaceful natural landscape"
+                    loading="lazy">
 
             </div>
 
-            <div class="impact-preview-overlay"></div>
-
             <div class="impact-preview-content">
 
-                <span class="eyebrow">OUR COMMITMENT</span>
+                <span class="eyebrow">
+                    OUR IMPACT
+                </span>
 
                 <h2>
-                    A better future<br>
-                    starts with <em>today.</em>
+                    A better way forward starts with small choices.
                 </h2>
 
                 <p>
-                    Discover the principles behind our choices and how
-                    we are working towards a more thoughtful way of living.
+                    Conscious living is a journey, not a destination.
+                    Discover the principles that guide Verdeva.
                 </p>
 
-                <a href="pages/impact.html" class="button button-light">
-                    Explore our impact
-                    <span>→</span>
+                <a href="pages/impact.html" class="button button--primary">
+                    Discover our approach
                 </a>
 
             </div>
@@ -669,52 +624,60 @@
 
 
         <!-- JOURNAL PREVIEW -->
+
         <section class="journal-section section-padding">
 
             <div class="section-heading">
 
-                <div>
-                    <span class="eyebrow">NOTES FOR CONSCIOUS LIVING</span>
-                    <h2>The Verdeva <em>journal.</em></h2>
-                    <p>Ideas, inspiration and little things worth knowing.</p>
-                </div>
+                <span class="eyebrow">
+                    THE VERDEVA JOURNAL
+                </span>
 
-                <a href="pages/journal.html" class="text-link">
-                    Visit the journal <span>→</span>
-                </a>
+                <h2>
+                    Thoughts for a slower everyday.
+                </h2>
+
+                <p>
+                    Ideas, inspiration and perspectives
+                    on more conscious living.
+                </p>
 
             </div>
-
 
             <div class="journal-grid">
 
                 <article class="journal-card">
 
-                    <a href="pages/articles/plastic-free-kitchen.html" class="journal-image">
+                    <a href="pages/journal.html#article-1"
+                        class="journal-image">
 
                         <img
-                            src="https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=900&q=85"
-                            alt="Natural kitchen with sustainable everyday essentials"
-                            loading="lazy"
-                        >
+                            src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1000&q=85"
+                            alt="Minimal natural living space"
+                            loading="lazy">
 
                     </a>
 
-                    <div class="journal-info">
+                    <div class="journal-card-content">
 
-                        <div class="journal-meta">
-                            <span>CONSCIOUS LIVING</span>
-                            <span>5 MIN READ</span>
-                        </div>
+                        <span class="journal-category">
+                            CONSCIOUS LIVING
+                        </span>
 
                         <h3>
-                            <a href="pages/articles/plastic-free-kitchen.html">
-                                A beginner's guide to a more conscious kitchen
-                            </a>
+                            The beauty of living with less
                         </h3>
 
-                        <a href="pages/articles/plastic-free-kitchen.html" class="text-link">
-                            Read article <span>→</span>
+                        <p>
+                            Discover how simplifying your surroundings
+                            can create more space for what matters.
+                        </p>
+
+                        <a href="pages/journal.html#article-1"
+                            class="text-link">
+
+                            Read story
+
                         </a>
 
                     </div>
@@ -724,31 +687,36 @@
 
                 <article class="journal-card">
 
-                    <a href="pages/articles/power-of-linen.html" class="journal-image">
+                    <a href="pages/journal.html#article-2"
+                        class="journal-image">
 
                         <img
-                            src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=900&q=85"
-                            alt="Natural linen textures in a minimalist interior"
-                            loading="lazy"
-                        >
+                            src="https://images.unsplash.com/photo-1603006905003-be475563bc59?auto=format&fit=crop&w=1000&q=85"
+                            alt="Natural self-care essentials"
+                            loading="lazy">
 
                     </a>
 
-                    <div class="journal-info">
+                    <div class="journal-card-content">
 
-                        <div class="journal-meta">
-                            <span>MATERIALS</span>
-                            <span>4 MIN READ</span>
-                        </div>
+                        <span class="journal-category">
+                            BETTER HABITS
+                        </span>
 
                         <h3>
-                            <a href="pages/articles/power-of-linen.html">
-                                The quiet beauty and versatility of linen
-                            </a>
+                            Small habits, meaningful changes
                         </h3>
 
-                        <a href="pages/articles/power-of-linen.html" class="text-link">
-                            Read article <span>→</span>
+                        <p>
+                            Everyday routines can be a starting point
+                            for making more thoughtful choices.
+                        </p>
+
+                        <a href="pages/journal.html#article-2"
+                            class="text-link">
+
+                            Read story
+
                         </a>
 
                     </div>
@@ -758,36 +726,49 @@
 
                 <article class="journal-card">
 
-                    <a href="pages/articles/mindful-routines.html" class="journal-image">
+                    <a href="pages/journal.html#article-3"
+                        class="journal-image">
 
                         <img
-                            src="https://images.unsplash.com/photo-1602874801007-bd458bb1b8b6?auto=format&fit=crop&w=900&q=85"
-                            alt="Calm natural home atmosphere and mindful lifestyle"
-                            loading="lazy"
-                        >
+                            src="https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?auto=format&fit=crop&w=1000&q=85"
+                            alt="Natural textures and interior details"
+                            loading="lazy">
 
                     </a>
 
-                    <div class="journal-info">
+                    <div class="journal-card-content">
 
-                        <div class="journal-meta">
-                            <span>EVERYDAY RITUALS</span>
-                            <span>6 MIN READ</span>
-                        </div>
+                        <span class="journal-category">
+                            THOUGHTFUL SPACES
+                        </span>
 
                         <h3>
-                            <a href="pages/articles/mindful-routines.html">
-                                Creating space for slower, more mindful mornings
-                            </a>
+                            Creating a home that feels like you
                         </h3>
 
-                        <a href="pages/articles/mindful-routines.html" class="text-link">
-                            Read article <span>→</span>
+                        <p>
+                            A more personal approach to decorating
+                            with useful objects and natural textures.
+                        </p>
+
+                        <a href="pages/journal.html#article-3"
+                            class="text-link">
+
+                            Read story
+
                         </a>
 
                     </div>
 
                 </article>
+
+            </div>
+
+            <div class="journal-action">
+
+                <a href="pages/journal.html" class="button button--secondary">
+                    Explore the journal
+                </a>
 
             </div>
 
@@ -795,23 +776,25 @@
 
 
         <!-- NEWSLETTER -->
-        <section class="newsletter-section">
+
+        <section class="newsletter-section section-padding">
 
             <div class="newsletter-content">
 
-                <span class="eyebrow">THE CONSCIOUS COLLECTIVE</span>
+                <span class="eyebrow">
+                    A NOTE FROM VERDEVA
+                </span>
 
                 <h2>
-                    Make room for<br>
-                    <em>better choices.</em>
+                    A little more inspiration for your inbox.
                 </h2>
 
                 <p>
-                    Thoughtful inspiration, new arrivals and little reminders
-                    to live more consciously. Delivered occasionally.
+                    Thoughtful ideas, conscious living and
+                    occasional updates from Verdeva.
                 </p>
 
-                <form class="newsletter-form" id="newsletterForm">
+                <form id="newsletterForm" class="newsletter-form">
 
                     <label for="newsletterEmail" class="visually-hidden">
                         Your email address
@@ -822,129 +805,89 @@
                         id="newsletterEmail"
                         name="email"
                         placeholder="Your email address"
-                        autocomplete="email"
-                        required
-                    >
+                        required>
 
                     <button type="submit">
-                        Subscribe <span>→</span>
+                        Subscribe
                     </button>
 
                 </form>
 
-                <p class="newsletter-note">
-                    By subscribing, you agree to receive emails from Verdeva.
-                    You can unsubscribe at any time.
-                </p>
+                <p id="newsletterFeedback" hidden aria-live="polite"></p>
 
-                <p class="newsletter-feedback" id="newsletterFeedback" aria-live="polite"></p>
+                <small>
+                    By subscribing, you agree to receive updates from Verdeva.
+                </small>
 
             </div>
 
         </section>
 
+
     </main>
 
 
     <!-- FOOTER -->
+
     <footer class="site-footer">
 
-        <div class="footer-main">
+        <div class="footer-container">
 
             <div class="footer-brand">
 
-                <a href="index.html" class="brand-logo footer-logo">
-                    verdeva<span>.</span>
+                <a href="index.html" class="brand-logo">
+                    verdeva.
                 </a>
 
                 <p>
-                    Thoughtful essentials for a more conscious everyday.
-                    Live simply. Choose better.
+                    Live consciously. Choose better.
                 </p>
 
-                <div class="social-links">
+            </div>
 
-                    <a href="#" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
-                        Instagram
-                    </a>
+            <div class="footer-links">
 
-                    <a href="#" aria-label="Pinterest" target="_blank" rel="noopener noreferrer">
-                        Pinterest
-                    </a>
+                <div>
 
-                    <a href="#" aria-label="TikTok" target="_blank" rel="noopener noreferrer">
-                        TikTok
-                    </a>
+                    <h3>Explore</h3>
+
+                    <a href="index.html">Home</a>
+                    <a href="pages/shop.html">Shop</a>
+                    <a href="pages/impact.html">Our Impact</a>
+                    <a href="pages/journal.html">Journal</a>
+
+                </div>
+
+                <div>
+
+                    <h3>Information</h3>
+
+                    <a href="pages/bag.html">Shopping bag</a>
+                    <a href="pages/impact.html">Our philosophy</a>
 
                 </div>
 
             </div>
 
-
-            <div class="footer-column">
-
-                <h3>Explore</h3>
-
-                <a href="pages/shop.html">Shop all</a>
-                <a href="pages/shop.html?sort=newest">New arrivals</a>
-                <a href="pages/shop.html?sort=bestselling">Bestsellers</a>
-                <a href="pages/impact.html">Our Impact</a>
-                <a href="pages/journal.html">Journal</a>
-
-            </div>
-
-
-            <div class="footer-column">
-
-                <h3>Customer Care</h3>
-
-                <a href="pages/contact.html">Contact us</a>
-                <a href="pages/faqs.html">FAQs</a>
-                <a href="pages/shipping.html">Shipping information</a>
-                <a href="pages/returns.html">Returns & exchanges</a>
-                <a href="pages/bag.html">Your bag</a>
-
-            </div>
-
-
-            <div class="footer-column">
-
-                <h3>Information</h3>
-
-                <a href="pages/about.html">Our story</a>
-                <a href="pages/privacy.html">Privacy policy</a>
-                <a href="pages/terms.html">Terms & conditions</a>
-                <a href="pages/cookies.html">Cookie policy</a>
-
-            </div>
-
         </div>
-
 
         <div class="footer-bottom">
 
-            <p>© 2026 Verdeva. All rights reserved.</p>
-
-            <p>Thoughtfully made for a better everyday.</p>
-
-            <a href="pages/bag.html">Your bag ↗</a>
-
+            <p>
+                © 2026 Verdeva. Thoughtfully made for everyday living.
+            </p>
         </div>
-
     </footer>
 
 
     <!-- CART NOTIFICATION -->
-    <div class="cart-notification"
-         id="cartNotification"
-         role="status"
-         aria-live="polite"
-         aria-atomic="true"
-         hidden>
-        <span id="cartNotificationMessage">Product added to your bag.</span>
-        <a href="pages/bag.html">View bag</a>
+    <div class="cart-notification" id="cartNotification" hidden>
+
+        <p id="cartNotificationMessage"></p>
+
+        <a href="pages/bag.html">
+            View bag
+        </a>
     </div>
-
-
 </body>
 </html>
