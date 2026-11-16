@@ -1,0 +1,191 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Review your Verdeva shopping bag and your thoughtfully selected everyday essentials.">
+    <meta name="theme-color" content="#F7F6F0">
+
+    <title>Your Bag — Verdeva</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/bag.css">
+
+    <script src="../js/index.js" defer></script>
+</head>
+
+<body>
+
+    <div class="announcement-bar">
+        Complimentary shipping on orders over €60
+    </div>
+
+    <header class="site-header">
+        <div class="header-container">
+
+            <button class="menu-toggle" id="menuToggle"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="mainNavigation">
+                <span></span>
+                <span></span>
+            </button>
+
+            <a href="../index.html" class="brand-logo">verdeva.</a>
+
+            <nav class="main-navigation" id="mainNavigation">
+                <a href="../index.html">Home</a>
+                <a href="shop.html">Shop</a>
+                <a href="impact.html">Our Impact</a>
+                <a href="journal.html">Journal</a>
+            </nav>
+
+            <div class="header-actions">
+                <button id="searchToggle" class="search-toggle"
+                    aria-label="Open search"
+                    aria-expanded="false">
+                    Search
+                </button>
+
+                <a href="bag.html" class="bag-link" aria-current="page">
+                    Bag (<span id="bagCount">0</span>)
+                </a>
+            </div>
+        </div>
+
+        <div class="search-panel" id="searchPanel" hidden>
+            <form id="searchForm">
+                <label for="siteSearch">What are you looking for?</label>
+                <input type="search" id="siteSearch"
+                    placeholder="Search products..."
+                    autocomplete="off">
+                <button type="submit">Search</button>
+            </form>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="bag-section section-padding">
+
+            <div class="bag-heading">
+                <span class="eyebrow">YOUR SELECTION</span>
+                <h1>Your shopping bag</h1>
+                <p>Thoughtful choices, ready for everyday life.</p>
+            </div>
+
+            <div class="bag-layout">
+
+                <section class="bag-items-section">
+                    <h2>Your items</h2>
+
+                    <div id="bagItems" class="bag-items">
+
+                        <div class="bag-empty" id="bagEmpty">
+                            <h3>Your bag is currently empty.</h3>
+                            <p>
+                                Discover everyday essentials selected
+                                with purpose.
+                            </p>
+                            <a href="shop.html" class="button button--primary">
+                                Explore the collection
+                            </a>
+                        </div>
+
+                    </div>
+                </section>
+
+                <aside class="bag-summary">
+                    <h2>Order summary</h2>
+
+                    <div class="summary-row">
+                        <span>Subtotal</span>
+                        <span id="bagSubtotal">€0.00</span>
+                    </div>
+
+                    <div class="summary-row">
+                        <span>Shipping</span>
+                        <span id="bagShipping">Calculated at checkout</span>
+                    </div>
+
+                    <div class="summary-divider"></div>
+
+                    <div class="summary-row summary-total">
+                        <strong>Total</strong>
+                        <strong id="bagTotal">€0.00</strong>
+                    </div>
+
+                    <p class="shipping-note">
+                        Complimentary shipping on orders over €60.
+                    </p>
+
+                    <a href="checkout.html"
+                        class="button button--primary checkout-button"
+                        id="checkoutButton">
+                        Continue to checkout
+                    </a>
+
+                    <a href="shop.html" class="continue-shopping">
+                        Continue shopping
+                    </a>
+                </aside>
+
+            </div>
+
+        </section>
+
+        <section class="bag-reassurance section-padding">
+            <div>
+                <h3>Thoughtfully selected</h3>
+                <p>Everyday essentials chosen with purpose.</p>
+            </div>
+
+            <div>
+                <h3>Made for everyday</h3>
+                <p>Useful pieces designed to become part of your routine.</p>
+            </div>
+
+            <div>
+                <h3>Conscious choices</h3>
+                <p>A little more thought behind the things we choose.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <a href="../index.html" class="brand-logo">verdeva.</a>
+                <p>Live consciously. Choose better.</p>
+            </div>
+
+            <div class="footer-links">
+                <div>
+                    <h3>Explore</h3>
+                    <a href="../index.html">Home</a>
+                    <a href="shop.html">Shop</a>
+                    <a href="impact.html">Our Impact</a>
+                    <a href="journal.html">Journal</a>
+                </div>
+
+                <div>
+                    <h3>Information</h3>
+                    <a href="bag.html">Shopping bag</a>
+                    <a href="impact.html">Our values</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Verdeva. Thoughtfully made for everyday living.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
