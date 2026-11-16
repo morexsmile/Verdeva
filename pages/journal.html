@@ -1,0 +1,214 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Read the Verdeva Journal for ideas on conscious living, sustainable habits and thoughtful everyday choices.">
+    <meta name="theme-color" content="#F7F6F0">
+
+    <title>Journal — Verdeva</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/journal.css">
+
+    <script src="../js/index.js" defer></script>
+</head>
+
+<body>
+
+    <div class="announcement-bar">
+        Complimentary shipping on orders over €60
+    </div>
+
+    <header class="site-header">
+        <div class="header-container">
+
+            <button class="menu-toggle" id="menuToggle"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="mainNavigation">
+                <span></span>
+                <span></span>
+            </button>
+
+            <a href="../index.html" class="brand-logo">verdeva.</a>
+
+            <nav class="main-navigation" id="mainNavigation">
+                <a href="../index.html">Home</a>
+                <a href="shop.html">Shop</a>
+                <a href="impact.html">Our Impact</a>
+                <a href="journal.html" aria-current="page">Journal</a>
+            </nav>
+
+            <div class="header-actions">
+                <button id="searchToggle" class="search-toggle"
+                    aria-label="Open search"
+                    aria-expanded="false">
+                    Search
+                </button>
+
+                <a href="bag.html" class="bag-link">
+                    Bag (<span id="bagCount">0</span>)
+                </a>
+            </div>
+        </div>
+
+        <div class="search-panel" id="searchPanel" hidden>
+            <form id="searchForm">
+                <label for="siteSearch">What are you looking for?</label>
+                <input type="search" id="siteSearch"
+                    placeholder="Search products..."
+                    autocomplete="off">
+                <button type="submit">Search</button>
+            </form>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="page-hero journal-hero">
+            <div class="page-hero-content">
+                <span class="eyebrow">THE VERDEVA JOURNAL</span>
+                <h1>Ideas for a more<br><em>conscious everyday.</em></h1>
+                <p>
+                    Thoughtful stories, simple inspiration and new perspectives
+                    on living with a little more intention.
+                </p>
+            </div>
+        </section>
+
+        <section class="journal-section section-padding">
+
+            <div class="section-heading">
+                <span class="eyebrow">READ, REFLECT, RECONNECT</span>
+                <h2>Stories worth slowing down for</h2>
+            </div>
+
+            <div class="journal-grid">
+
+                <article class="journal-card">
+                    <a href="#article-1" class="journal-image">
+                        <img
+                            src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1200&q=85"
+                            alt="Minimal natural living room"
+                            loading="lazy">
+                    </a>
+
+                    <div class="journal-card-content">
+                        <span class="journal-category">CONSCIOUS LIVING</span>
+                        <h2>
+                            <a href="#article-1">
+                                The beauty of living with less
+                            </a>
+                        </h2>
+                        <p>
+                            Discover how simplifying your surroundings
+                            can create more space for what matters.
+                        </p>
+                        <a href="#article-1" class="text-link">Read story</a>
+                    </div>
+                </article>
+
+                <article class="journal-card">
+                    <a href="#article-2" class="journal-image">
+                        <img
+                            src="https://images.unsplash.com/photo-1603006905003-be475563bc59?auto=format&fit=crop&w=1200&q=85"
+                            alt="Natural self-care products"
+                            loading="lazy">
+                    </a>
+
+                    <div class="journal-card-content">
+                        <span class="journal-category">BETTER HABITS</span>
+                        <h2>
+                            <a href="#article-2">
+                                Small habits, meaningful changes
+                            </a>
+                        </h2>
+                        <p>
+                            Everyday routines can be a starting point
+                            for making more thoughtful choices.
+                        </p>
+                        <a href="#article-2" class="text-link">Read story</a>
+                    </div>
+                </article>
+
+                <article class="journal-card">
+                    <a href="#article-3" class="journal-image">
+                        <img
+                            src="https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?auto=format&fit=crop&w=1200&q=85"
+                            alt="Natural textures and home accessories"
+                            loading="lazy">
+                    </a>
+
+                    <div class="journal-card-content">
+                        <span class="journal-category">THOUGHTFUL SPACES</span>
+                        <h2>
+                            <a href="#article-3">
+                                Creating a home that feels like you
+                            </a>
+                        </h2>
+                        <p>
+                            A more personal approach to decorating
+                            with useful objects and natural textures.
+                        </p>
+                        <a href="#article-3" class="text-link">Read story</a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <section class="journal-quote section-padding">
+            <blockquote>
+                "A more conscious life begins with the little things
+                we choose every day."
+            </blockquote>
+            <span class="eyebrow">THE VERDEVA APPROACH</span>
+        </section>
+
+        <section class="journal-cta section-padding">
+            <h2>Make thoughtful choices part of your everyday.</h2>
+            <p>Explore the collection and find your everyday essentials.</p>
+            <a href="shop.html" class="button button--primary">
+                Explore the collection
+            </a>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <a href="../index.html" class="brand-logo">verdeva.</a>
+                <p>Live consciously. Choose better.</p>
+            </div>
+
+            <div class="footer-links">
+                <div>
+                    <h3>Explore</h3>
+                    <a href="../index.html">Home</a>
+                    <a href="shop.html">Shop</a>
+                    <a href="impact.html">Our Impact</a>
+                    <a href="journal.html">Journal</a>
+                </div>
+
+                <div>
+                    <h3>Information</h3>
+                    <a href="bag.html">Shopping bag</a>
+                    <a href="impact.html">Our values</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Verdeva. Thoughtfully made for everyday living.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
